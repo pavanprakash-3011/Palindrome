@@ -1,0 +1,25 @@
+package Java;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+		int j=num;
+		int rev=0,i=0;
+		while(num>0) {
+			i=num%10;
+			rev=(rev*10)+i;
+			num/=10;		
+		}
+		if(j==rev) {
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not Palindrome");
+		}
+	}
+
+}
